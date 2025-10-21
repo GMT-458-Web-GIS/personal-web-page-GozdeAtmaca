@@ -1,0 +1,99 @@
+<style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f8f9fa, #e3eaf0);
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: rgb(74, 20, 74);
+      color: white;
+      text-align: left;
+      padding: 3 rem 0;
+      animation: fadeInDown 1.5s ease;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 800;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd166;
+    }
+    main {
+      padding: 2rem;
+      text-align: left;
+      animation: fadeIn 2s ease;
+    }
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 45%;
+      object-fit: cover;
+      box-shadow: 0 4px 15px purple;
+      animation: float 4s ease-in-out infinite;
+    }
+    .about {
+      max-width: 500px;
+      margin: 2rem auto;
+      font-size: 1.2rem;
+      color: black;
+      line-height: 1.5;
+    }
+    .map {
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+      margin-top: 2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      animation: fadeInUp 1.5s ease;
+    }
+
+    table {
+      width: 90%;
+      margin: 2rem auto;
+      border-collapse: collapse;
+      animation: fadeInUp 1.8s ease;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: purple;
+      color: white;
+    }
+    td img {
+      width: 100px;
+      height: 80px;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+    td img:hover {
+      transform: scale(1.1);
+    }
+
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInDown {
+      from { transform: translateY(-40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+</style>
+
